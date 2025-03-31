@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --font-sans: "Inter", "sans-serif"; 
+  --color-blu: #239DE2;
+  --color-gre: #CCCCCC;
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 200rem;
+}
+
+.title {
+  @apply md:text-6xl text-5xl font-black font-sans 4xl:text-8xl
+}
+
+.header {
+  @apply md:text-3xl text-2xl font-bold font-sans 4xl:text-4xl
+}
+
+.subheader {
+  @apply md:text-xl text-lg font-medium font-sans 4xl:text-3xl
+}
+
+.book {
+  @apply md:text-lg text-base font-sans 4xl:text-3xl
+}
+
+.cardgrid{
+  @apply md:grid 4xl:grid-cols-5 3xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-5 flex flex-col 3xl:gap-10 
+}
