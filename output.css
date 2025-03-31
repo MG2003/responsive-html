@@ -37,7 +37,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-blu: #0288C0;
+    --color-blu: #0084BD;
     --color-gre: #CCCCCC;
   }
 }
