@@ -211,6 +211,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
@@ -236,6 +239,12 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -268,11 +277,21 @@
     border-top-left-radius: var(--radius-xl);
     border-top-right-radius: var(--radius-xl);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-\[\#EAEAEA\] {
     background-color: #EAEAEA;
   }
-  .bg-\[\#f5f5f5\] {
-    background-color: #f5f5f5;
+  .bg-\[\#bcbcbc\] {
+    background-color: #bcbcbc;
+  }
+  .bg-\[\#d0d0d0\] {
+    background-color: #d0d0d0;
+  }
+  .bg-\[\#e6e6e6\] {
+    background-color: #e6e6e6;
   }
   .bg-blu {
     background-color: var(--color-blu);
@@ -332,12 +351,19 @@
   .underline {
     text-decoration-line: underline;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .brightness-95 {
     --tw-brightness: brightness(95%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .drop-shadow-xl {
     --tw-drop-shadow: drop-shadow(var(--drop-shadow-xl));
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-all {
@@ -560,6 +586,16 @@
   @media (width >= 200rem) {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
