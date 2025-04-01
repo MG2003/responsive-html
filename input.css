@@ -11,19 +11,19 @@
 }
 
 .title {
-  @apply md:text-6xl text-5xl font-black font-sans 4xl:text-8xl
+  @apply md:text-6xl text-5xl font-black font-sans 3xl:text-8xl
 }
 
 .header {
-  @apply md:text-3xl text-2xl font-bold font-sans 4xl:text-4xl
+  @apply md:text-3xl text-2xl font-bold font-sans 3xl:text-4xl
 }
 
 .subheader {
-  @apply md:text-xl text-lg font-medium font-sans 4xl:text-3xl
+  @apply md:text-xl text-lg font-medium font-sans 3xl:text-3xl
 }
 
 .book {
-  @apply md:text-lg text-base font-sans 4xl:text-3xl
+  @apply md:text-lg text-base font-sans 3xl:text-3xl
 }
 
 .cardgrid{
